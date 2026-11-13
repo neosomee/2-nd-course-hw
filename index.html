@@ -1,11 +1,111 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Сайт мини-игр</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <section class="hero-page">
+    <img class="hero-page__decoration hero-page__decoration--big-left" src="img/big-left-star-on-hero.png" alt="">
+    <img class="hero-page__decoration hero-page__decoration--big-right" src="img/bigged-right-star-on-hero.png" alt="">
+    <img class="hero-page__decoration hero-page__decoration--gray-medium" src="img/gray-medium-right-star-on-hero.png" alt="">
+    <img class="hero-page__decoration hero-page__decoration--gray-small" src="img/gray-small-right-star-on-hero.png" alt="">
+    <img class="hero-page__decoration hero-page__decoration--small-right" src="img/small-right-star-on-hero.png" alt="">
+         
+
+        <div class="hero-page__content">
+            <h1 class="hero-page__title">
+                Добро пожаловать<br>
+                на мой сайт мини-игр
+            </h1>
+
+            <p class="hero-page__text">
+                Тебе предстоит пройти несколько увлекательных игр.<br>
+                Если готов, нажимай <strong>«Поехали!»</strong> и
+                <strong>приступай.</strong>
+            </p>
+
+            <a href="#games" class="hero-page__button">Поехали!</a>
+        </div>
+        <div class="hero-page__marquee"></div>
+
+    </section>
+
+    <section class="games" id="games">
+        <img class="games__decoration games__decoration--big" src="img/big-right-star-on-games.png" alt="">
+        <img class="games__decoration games__decoration--medium" src="img/medium-left-star-on-games.png" alt="">
+        <img class="games__decoration games__decoration--small" src="img/small-left-star-on-games.png" alt="">
+
+        <h2 class="games__title">Об играх</h2>
+
+        <p class="games__text">
+            В моей коллекции представлено 6 игр на разные темы.<br>
+            Игры несложные — в них может поиграть каждый.<br>
+            Все игры доступны для пользования.
+        </p>
+
+        <ul class="games__content">
+            <li class="games__column">
+                <article class="games__card">
+                    <img class="games__image" src="img/game-1.png" alt="Угадай число">
+                    <div class="games__info">
+                        <span class="games__number"><strong>Игра №1</strong></span>
+                        <h3 class="games__name">Угадай число</h3>
+                    </div> 
+                </article>
+
+                <article class="games__card">
+                    <img class="games__image" src="img/game-4.png" alt="Камень, ножницы, бумага">
+                    <div class="games__info">
+                        <span class="games__number"><strong>Игра №4</strong></span>
+                        <h3 class="games__name">Камень, <br>ножницы, <br>бумага</h3>
+                    </div> 
+                </article>
+            </li>    
+            <li class="games__column">
+                <article class="games__card">
+                    <img class="games__image" src="img/game-2.png" alt="Простая арифметика">
+                    <div class="games__info">
+                        <span class="games__number"><strong>Игра №2</strong></span>
+                        <h3 class="games__name">Простая <br> арифметика</h3>
+                    </div> 
+                </article>
+
+                <article class="games__card">
+                    <img class="games__image" src="img/game-5.png" alt="Простая викторина">
+                    <div class="games__info">
+                        <span class="games__number"><strong>Игра №5</strong></span>
+                        <h3 class="games__name">Простая <br> викторина</h3>
+                    </div> 
+                </article>
+            </li>    
+
+            <li class="games__column">
+                <article class="games__card">
+                    <img class="games__image" src="img/game-3.png" alt="Переверни текст">
+                    <div class="games__info">
+                        <span class="games__number"><strong>Игра №3</strong></span>
+                        <h3 class="games__name">Переверни текст</h3>
+                    </div> 
+                </article>
+
+                <article class="games__card">
+                    <img class="games__image" src="img/game-6.png" alt="Генератор случайных цветов">
+                    <div class="games__info">
+                        <span class="games__number"><strong>Игра №6</strong></span>
+                        <h3 class="games__name">Генератор <br> случайных <br> цветов</h3>
+                    </div> 
+                </article>
+            </li>
+        </ul>
+    </section>
+
 </body>
 </html>
