@@ -1,0 +1,143 @@
+
+@media (max-width: 767px) {
+
+    .hero-page {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        min-height: 700px;
+        padding: 0;
+
+        display: block;
+        background: #E1FF8F;
+
+        overflow: hidden;
+    }
+
+    .hero-page__content {
+        position: absolute;
+        width: 343px;
+        max-width: calc(100% - 36px);
+        height: 371px;
+
+        left: 50%;
+        top: 147px;
+        transform: translateX(-50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-page__title {
+        width: 262px;
+        max-width: 100%;
+        height: 196px;
+        margin: 0 0 24px;
+
+        font-size: 40px;
+        line-height: 49px;
+        font-weight: 700;
+
+        text-align: center;
+        display: block;
+    }
+
+    .hero-page__text {
+        width: 296px;
+        max-width: 100%;
+        height: 60px;
+        margin: 0 0 36px;
+
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+
+        text-align: center;
+        display: block;
+    }
+
+    .hero-page__text br {
+        display: none;
+    }
+
+    .hero-page__button {
+        width: 285px;
+        max-width: 100%;
+        height: 55px;
+        flex-shrink: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 16px 28px;
+
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .hero-page__decoration--big-left {
+        width: 35px;
+        height: auto;
+        left: 38px;
+        top: 97px;
+    }
+
+    .hero-page__decoration--small-right {
+        width: 21px;
+        height: auto;
+        left: 92px;
+        top: 64px;
+    }
+
+    .hero-page__decoration--big-right {
+        width: 220px;
+        height: auto;
+        right: -10px;
+        top: -10px;
+    }
+
+    .hero-page__decoration--gray-medium {
+        width: 39px;
+        height: auto;
+        left: 304px;
+        bottom: 79px;
+    }
+
+    .hero-page__decoration--gray-small {
+        width: 18px;
+        height: auto;
+        left: 273px;
+        bottom: 125px;
+    }
+
+    .hero-page__marquee {
+        position: absolute;
+        width: 100%;
+        height: 45px;
+        left: 0;
+        bottom: 0;
+
+        background-image: url("img/games-marquee.svg");
+        background-repeat: repeat-x;
+        background-size: auto 45px;
+
+        animation: marquee-mobile 30s linear infinite;
+        z-index: 2;
+    }
+
+    @keyframes marquee-mobile {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: -1610px 0;
+        }
+    }
+
+    .games {
+        display: none;
+    }
+}
